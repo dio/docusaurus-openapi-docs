@@ -8,13 +8,11 @@
 import React from "react";
 
 import CodeBlock from "@theme/CodeBlock";
-/* eslint-disable import/no-extraneous-dependencies*/
-import { createDescription } from "docusaurus-theme-openapi-docs/lib/markdown/createDescription";
-/* eslint-disable import/no-extraneous-dependencies*/
-import { guard } from "docusaurus-theme-openapi-docs/lib/markdown/utils";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
+import { createDescription } from "../../markdown-js/createDescription.js";
+import { guard } from "../../markdown-js/utils.js";
 import styles from "./styles.module.css";
 
 function SchemaItem({
